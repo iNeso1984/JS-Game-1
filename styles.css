@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Orbitron&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+  font-family: "Krona One", sans-serif;
+}
+p {
+  color: white;
+
+  margin-top: 30px;
+}
+
+#lose {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+#tryAgain {
+  display: none;
+}
+
+button {
+  background-color: tomato;
+  border: none;
+  padding: 10px 20px;
+  position: relative;
+  left: 40%;
+  border-radius: 5px;
+}
+.hits {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+#game {
+  width: 480px;
+  height: 245px;
+  position: relative;
+  margin-top: 10%;
+  border: 5px solid tomato;
+  background-image: url("images/background-03.png");
+  background-repeat: none;
+}
+/*adding position relative allows for you to position top at bottom*/
+#character {
+  width: 20px;
+  height: 50px;
+  position: relative;
+  top: 150px;
+  background-color: tomato;
+  border-radius: 20px;
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+.animate {
+  animation: jump 400ms;
+}
+
+#block {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 90px;
+  left: 480px;
+  animation: block 2.5s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 480px;
+  }
+  100% {
+    left: -40px;
+  }
+}
+#points {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 60px;
+  left: 480px;
+  animation: pointsAnimation 2.5s infinite linear;
+}
+
+@keyframes pointsAnimation {
+  0% {
+    left: 480px;
+  }
+  100% {
+    left: -40px;
+  }
+}
