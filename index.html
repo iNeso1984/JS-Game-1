@@ -13,15 +13,27 @@
   </head>
   <body id="canvas">
     <p>
-      Press spacebar(jump) as many times as you can while avoiding the plant!
+      Press spacebar(jump)--Get to 30 while avoiding the plant! 
     </p>
+
     <div id="game">
       <p id="score"><span class="hits">0</span></p>
       <div id="lose"><h1>YOU LOSE!</h1></div>
-      <button id="tryAgain" onclick="restart()">Try again</button>
+      <div id="win" class="winner">
+        <p>
+          Yay, 30 Jumps!<br />
+          YOU WIN! &#x1F918;
+        </p>
+      </div>
+      <button id="tryAgain" onclick="restart()">Replay</button>
+      <div>
+        <button id="start" class="starts" onclick="startGame()">Start</button>
+      </div>
       <div id="character"></div>
       <div id="points"></div>
-      <div id="block"><i class="fa-solid fa-plant-wilt fa-2x"></i></div>
+      <div id="block" class="blockClass">
+        <i class="fa-solid fa-plant-wilt fa-2x"></i>
+      </div>
     </div>
   </body>
   <script src="game.js"></script>
