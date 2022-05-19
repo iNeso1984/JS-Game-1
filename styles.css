@@ -12,6 +12,7 @@ p {
   color: white;
 
   margin-top: 5px;
+  text-align: center;
 }
 
 #lose {
@@ -22,7 +23,16 @@ p {
 #tryAgain {
   display: none;
 }
-
+.starts {
+  display: block;
+}
+.winner {
+  display: none;
+  text-align: center;
+}
+.hide {
+  display: none;
+}
 button {
   background-color: tomato;
   border: none;
@@ -38,7 +48,7 @@ button {
 
 #game {
   width: 480px;
-  height: 245px;
+  height: 280px;
   position: relative;
   margin-top: 10%;
   border: 5px solid tomato;
@@ -79,6 +89,7 @@ button {
   top: 90px;
   left: 480px;
   animation: block 2.5s infinite linear;
+  display: none;
 }
 
 @keyframes block {
