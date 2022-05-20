@@ -12,16 +12,21 @@
     />
   </head>
   <body id="canvas">
-    <p>
-      Press spacebar(jump)--Get to 30 while avoiding the plant! 
-    </p>
-
-    <div id="game">
+    <p>Press spacebar(jump)--Get to 50 jumps while avoiding the plant!</p>
+    <div>
+      <button class="change" onclick="return randomColor()">
+        Change Player Color
+      </button>
+      <button class="backgroundChange" onclick="return randomImg()">
+        Change Background
+      </button>
+    </div>
+    <div id="game" class="backgroundChange">
       <p id="score"><span class="hits">0</span></p>
       <div id="lose"><h1>YOU LOSE!</h1></div>
       <div id="win" class="winner">
         <p>
-          Yay, 30 Jumps!<br />
+          Yay, 50 Jumps!<br />
           YOU WIN! &#x1F918;
         </p>
       </div>
@@ -29,7 +34,7 @@
       <div>
         <button id="start" class="starts" onclick="startGame()">Start</button>
       </div>
-      <div id="character"></div>
+      <div id="character" class="change"></div>
       <div id="points"></div>
       <div id="block" class="blockClass">
         <i class="fa-solid fa-plant-wilt fa-2x"></i>

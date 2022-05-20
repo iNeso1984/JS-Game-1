@@ -45,6 +45,9 @@ button {
   font-size: 1em;
   font-weight: bolder;
 }
+.change {
+  margin-top: 20px;
+}
 
 #game {
   width: 480px;
@@ -63,6 +66,7 @@ button {
   top: 150px;
   background-color: tomato;
   border-radius: 20px;
+  z-index: 3;
 }
 @keyframes jump {
   0% {
@@ -107,13 +111,4 @@ button {
   top: 60px;
   left: 480px;
   animation: pointsAnimation 2.5s infinite linear;
-}
-
-@keyframes pointsAnimation {
-  0% {
-    left: 480px;
-  }
-  100% {
-    left: -40px;
-  }
 }
