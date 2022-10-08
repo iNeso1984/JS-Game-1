@@ -43,6 +43,7 @@ button {
   left: 10%;
   margin-right: 30px;
   border-radius: 5px;
+  color :white;
 }
 .hits {
   font-size: 1em;
